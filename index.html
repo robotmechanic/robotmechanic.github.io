@@ -28,10 +28,9 @@
     body {
           background-image: url("swirl_pattern.png");
           background-repeat: repeat;
-          
     }  
   
-    body h3  {
+    h5  {
       text-align: center;
       letter-spacing: 0.15em;
       color: orange;
@@ -44,7 +43,7 @@
       background-color: none;
       padding-top: 30px;
       padding-right: 30px;
-      padding-bottom: 70px;
+      padding-bottom: 40px;
       background-color:  rgba(255, 165, 0, 1);
       border-bottom: solid white;
     }
@@ -53,12 +52,10 @@
       max-width: 150px;
       border: 5px solid #fff;
       border-radius: 10%;
+      opacity: 0.85;
     }
     
      .bodyText p {
-       
-      border-left: 1px solid#e7e7e7;
-      border-left-style: double;
       padding: 10px;
       margin: 10px;
       color: white;
@@ -90,12 +87,27 @@
     }
     
     .last-name {
-      color: gray;
+      color: #777;
       letter-spacing: .10em;
     }
     
     #icon {
       color: white;
+    }
+    
+    .divider {
+          border-left: 1px solid white;
+    }
+    
+    footer {
+      padding-top: 20px;
+      padding-bottom: 60px;
+      border-top: solid white;
+      font-size: 80%;
+      text-align: center;
+      background-color: orange;
+      color: white;
+      white-space: nowrap
     }
     
   </style>
@@ -108,44 +120,59 @@
     </div>
     <div class="bodyText">
     <div class="row">
-    <div class="col-sm-3"><span id="icon" class="glyphicon glyphicon-barcode"></span><h3> Who am I? </h3><br>
+    <div class="col-sm-3"><span id="icon" class="glyphicon glyphicon-barcode"></span><h5> Who am I? </h5><br>
         </div> 
-    <div class="col-sm-9">
+    <div class="col-sm-9"><div class="divider">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
     </div>
     </div>  <!-- row end -->
         
     <div class="row">
-    <div class="col-sm-3"><span id="icon" class="glyphicon glyphicon-barcode"><h3>Current Projects</h3><br>
+    <div class="col-sm-3"><span id="icon" class="glyphicon glyphicon-barcode"></span><h5>Current Projects</h5><br>
         </div> 
-    <div class="col-sm-9">
+    <div class="col-sm-9"><div class="divider">
       <img id="banner" src="bg1.png" alt="">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
     </div>
     </div>  <!-- row end -->
     
     <div class="row">
-    <div class="col-sm-3"><h3>Past Projects</h3><br>
+    <div class="col-sm-3"><h5>Past Projects</h5><br>
         </div> 
     <div class="col-sm-9">
       <img id="banner" class="fadeIn" src="devilsthird.jpg" alt="">
+      <img id="banner" class="fadeIn" src="lollipop.jpg" alt="">
       <img id="banner" class="fadeIn" src="ff13.jpg" alt="">
+      <img id="banner" class="fadeIn" src="streetfighter.jpg" alt="">
       <img id="banner" class="fadeIn" src="tprime.jpg" alt="">
       <img id="banner" class="fadeIn" src="clonewars.jpg" alt="">
+      <img id="banner" class="fadeIn" src="turtletalk.jpg" alt="">
+      <div class="divider">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
     </div>
     </div>  <!-- row end -->    
          
     <div class="row">
-    <div class="col-sm-3"><h3>Hobbies</h3><br>
+    <div class="col-sm-3"><h5>Hobbies</h5><br>
         </div> 
     <div class="col-sm-9">
       <img id="photos" class="pulse" src="arduino.jpg" alt="">
       <img id="photos" class="pulse" src="raspberrypi.jpg" alt="">
       <img id="photos"  class="pulse" src="workspace.jpg" alt="">
+      <div class="divider">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
     </div>
     </div>  <!-- row end -->  
     </div>
+    
+    <footer>
+        <p>&copy; 2016 David Hovanky All rights reserved.</p>
+    </footer>
   </body>
 </html>
