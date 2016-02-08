@@ -22,24 +22,31 @@
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    
 }
 
     body {
           background-image: url("swirl_pattern.png");
           background-repeat: repeat;
-          background-color: #C0C0C0;
+          
     }  
   
     body h3  {
       text-align: center;
+      letter-spacing: 0.15em;
+      color: orange;
     }
     
     .title {
-      text-align: center;
+      text-align: right;
       letter-spacing: 0.35em;
       color: #000;
       padding-bottom: 10px;
       background-color: none;
+      padding-top: 30px;
+      padding-right: 30px;
+      padding-bottom: 70px;
+      background-color:  rgba(255, 165, 0, 1);
     }
     
     .title img {
@@ -49,9 +56,12 @@
     }
     
      .bodyText p {
+       
+      border-left: 1px solid#e7e7e7;
+      border-left-style: double;
       padding: 10px;
       margin: 10px;
-      background-color: white;
+      color: white;
     }
     
     #photos {
@@ -65,17 +75,40 @@
       max-height:100%;
     }
     
+    .row {
+      border-style: solid;
+      border-color: white;
+      padding-top: 20px;
+      background-color:  rgba(0, 0, 0, .7);
+      margin: 30px;
+      border-radius: 12px;
+    }
+    
+    .first-name {
+      color: white;
+      letter-spacing: .10em;
+    }
+    
+    .last-name {
+      color: gray;
+      letter-spacing: .10em;
+    }
+    
+    #icon {
+      color: white;
+    }
+    
   </style>
   
   <body>
     <div class="title"><img src="david.jpg" alt="">
-      <h4>David Hovanky</h4>
+      <h4><span class="first-name">David</span><span class="last-name"> Hovanky</span></h4>
       <p>game developer / designer / hacker</p>
       <p>@robotmechanic</p>
     </div>
     <div class="bodyText">
     <div class="row">
-    <div class="col-sm-3"><h3>Who am I?</h3><br>
+    <div class="col-sm-3"><span id="icon" class="glyphicon glyphicon-barcode"></span><h3> Who am I? </h3><br>
         </div> 
     <div class="col-sm-9">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -83,10 +116,10 @@
     </div>  <!-- row end -->
         
     <div class="row">
-    <div class="col-sm-3"><h3>Current Projects</h3><br>
+    <div class="col-sm-3"><span id="icon" class="glyphicon glyphicon-barcode"><h3>Current Projects</h3><br>
         </div> 
     <div class="col-sm-9">
-      <img id="banner" src="bg2.png" alt="">
+      <img id="banner" src="bg1.png" alt="">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     </div>  <!-- row end -->
@@ -95,7 +128,10 @@
     <div class="col-sm-3"><h3>Past Projects</h3><br>
         </div> 
     <div class="col-sm-9">
-      <img id="banner" src="bg2.png" alt="">
+      <img id="banner" class="fadeIn" src="devilsthird.jpg" alt="">
+      <img id="banner" class="fadeIn" src="ff13.jpg" alt="">
+      <img id="banner" class="fadeIn" src="tprime.jpg" alt="">
+      <img id="banner" class="fadeIn" src="clonewars.jpg" alt="">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     </div>  <!-- row end -->    
