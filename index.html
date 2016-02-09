@@ -22,11 +22,11 @@
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
-    
+    transition: all 0.5s ease;
 }
 
     body {
-          background-image: url("swirl_pattern.png");
+          background-image: url("bo_play_pattern.png");
           background-repeat: repeat;
     }  
   
@@ -34,6 +34,14 @@
       text-align: center;
       letter-spacing: 0.15em;
       color: orange;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    hr {
+      margin: 20px;
     }
     
     .title {
@@ -46,13 +54,15 @@
       padding-bottom: 40px;
       background-color:  rgba(255, 165, 0, 1);
       border-bottom: solid white;
+      background-image: url("giphy.gif");
+          background-repeat: no-repeat;
+      background-position: left;
     }
     
     .title img {
       max-width: 150px;
       border: 5px solid #fff;
       border-radius: 10%;
-      opacity: 0.85;
     }
     
      .bodyText p {
@@ -65,11 +75,18 @@
       max-width: 150px;
       border: 5px solid #fff;
       border-radius: 10%;
+      
+    }
+    
+    .title img:hover {
+      transform: scale(1.05);
     }
     
     #banner {
       max-width:100%;
       max-height:100%;
+      padding: 10px;
+      
     }
     
     .row {
@@ -77,7 +94,7 @@
       border-color: white;
       padding-top: 20px;
       background-color:  rgba(0, 0, 0, .7);
-      margin: 30px;
+      margin: 60px;
       border-radius: 12px;
     }
     
@@ -92,6 +109,7 @@
     }
     
     #icon {
+      font-size: 32px;
       color: white;
     }
     
@@ -111,31 +129,50 @@
     }
     
   </style>
-  
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56b9815b026022ec" async="async"></script>
+
   <body>
     <div class="title"><img src="david.jpg" alt="">
       <h4><span class="first-name">David</span><span class="last-name"> Hovanky</span></h4>
       <p>game developer / designer / hacker</p>
       <a href="https://twitter.com/robotmechanic">@robotmechanic</a>
+      <div class="addthis_sharing_toolbox"></div>
     </div>
     <div class="bodyText">
     <div class="row">
     <div class="col-sm-3"><span id="icon" class="glyphicon glyphicon-barcode"></span><h5> Who am I? </h5><br>
         </div> 
     <div class="col-sm-9"><div class="divider">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+      <p>I am a game developer living in Tokyo, Japan. I specialize in creating 3D games in Unity. My long experience in the CG and software industry has given me the skills to plan, design and program a high quality 3D game efficiently for a fraction of the cost larger studios require. 
+
+Currently developing new game projects using Unity and exploring new opportunities for iOS/Android and PC/Mac platforms. 
+<br><br>
+I am also a Maya character rigger and modeler with over 10 years of industry experience in the field of high end commercials, interactive, games, television and film visual effects.
+
+Japanese ability - Level 2 Japanese Proficiency - Business level
+
+Specialties: Unity, C#, Character rigging, modeling and animation in Maya, Zbrush, Concept Design, Illustration, Texturing, MEL, Python, Unreal Development Kit, CSS, HTML, Ruby on Rails
+</p> </div>
     </div>
     </div>  <!-- row end -->
         
     <div class="row">
     <div class="col-sm-3"><span id="icon" class="glyphicon glyphicon-barcode"></span><h5>Current Projects</h5><br>
         </div> 
-    <div class="col-sm-9"><div class="divider">
-      <img id="banner" src="bg1.png" alt="">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="col-sm-9">
+      <a href="http://www.indiedb.com/games/galaxica" target="_blank"><img id="banner" src="bg1.png" alt=""></a>
+      <div class="divider">
+      <p>Introduction <br><br>
+Galaxica is an procedurally generated action (roguelike?) game set in space. This is a game that I started working since last December. I wanted to polish a working prototype to show the community (this means you) and to get feedback on what you like, hate, etc. I've failed plenty of times at my personal game releases in the past I really want to gauge the communities interests and reaction before investing further time into it.
+<br><br>
+The game in a nutshell
+
+Travel interstellar distances in your starship in search of rare materials you can use to trade.
+Fight alien races and space pirates and take their stuff.
+Use said stuff to purchase upgrades from the local vendor to increase your chances of survival.
+Explore randomly generated 3D worlds by landing on planets and disembarking and mining/harvesting the planet for its wealth.
+Dungeon exploration on planets and on ships</p>
     </div>
     </div>
     </div>  <!-- row end -->
@@ -144,13 +181,23 @@
     <div class="col-sm-3"><h5>Past Projects</h5><br>
         </div> 
     <div class="col-sm-9">
+      <p>Here is a list of the projects that I have worked on over the years.</p>
       <img id="banner" class="fadeIn" src="devilsthird.jpg" alt="">
+      <p>Devil's Third</p><hr>
       <img id="banner" class="fadeIn" src="lollipop.jpg" alt="">
+      <p>Lollipop Chainsaw</p><hr>
       <img id="banner" class="fadeIn" src="ff13.jpg" alt="">
+      <p>Final Fantasy XIII</p><hr>
       <img id="banner" class="fadeIn" src="streetfighter.jpg" alt="">
+      <p>Street Fighter IV</p><hr>
       <img id="banner" class="fadeIn" src="tprime.jpg" alt="">
+      <p>Transformers Prime TV Series Season 1</p><hr>
       <img id="banner" class="fadeIn" src="clonewars.jpg" alt="">
+      <p>Star Wars Clone Wars TV Series Season 3</p><hr>
+      <img id="banner" class="fadeIn" src="skycrawlers.jpg" alt="">
+      <p>The Sky Crawlers, a CG film by Mamoru Ishii</p><hr>
       <img id="banner" class="fadeIn" src="turtletalk.jpg" alt="">
+      <p>Turtle Talk with Crush, a Walt Disney theme park attraction</p>
       <div class="divider">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
@@ -173,6 +220,7 @@
     
     <footer>
         <p>&copy; 2016 David Hovanky All rights reserved.</p>
+        <div class="addthis_sharing_toolbox"></div>  
     </footer>
   </body>
 </html>
