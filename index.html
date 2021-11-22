@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="David Hovanky's personal website">
+    <meta name="description" content="David Hovanky's Webpage">
     <title>David Hovanky @robotmechanic</title>
     <link rel="stylesheet" href="animations.css">
     <!-- BootstrapのCSS読み込み -->
@@ -13,8 +13,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  
-  
+
+
   <style>
   html,body
 {
@@ -22,33 +22,34 @@
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     transition: all 0.5s ease;
 }
 
     body {
-          background-image: url("bo_play_pattern.png");
+          background-image: url("images/bg.png");
           background-repeat: repeat;
-    }  
-  
+          font-family: Arial, Helvetica, sans-serif;
+    }
+
     h5  {
       text-align: center;
       letter-spacing: 0.15em;
       color: orange;
     }
-    
+
     a {
       text-decoration: none;
     }
-    
+
     hr {
       margin: 20px;
     }
-    
+
     li {
       color: white;
     }
-    
+
     .title {
       text-align: right;
       letter-spacing: 0.35em;
@@ -63,45 +64,56 @@
       background-repeat: no-repeat;
       background-position: left;
     }
-    
+
     .title img {
       max-width: 150px;
       border: 5px solid #fff;
       border-radius: 10%;
     }
-    
+
      .bodyText p {
       padding: 10px;
       margin: 10px;
       color: white;
     }
-    
+
     #photos {
       max-width: 150px;
       border: 5px solid #fff;
       border-radius: 10%;
-      
+
     }
-    
+
+
     .title img:hover {
       transform: scale(1.05);
     }
-    
+
     #screenshots {
       max-width:100%;
       max-height:100%;
       margin: 10px;
       border-radius: 12px;
       border: solid white 1px;
-  
+
     }
-    
+
     #banner {
-      max-width:100%;
-      max-height:100%;
+      max-width:90%;
+      max-height:90%;
       margin: 10px;
+      align:left;
     }
-    
+
+    #projectimage {
+      float: left;
+      margin: 0 15px 0 0;
+    }
+
+    .description {
+      float:right;
+    }
+
     .row {
       border-style: solid;
       border-color: white;
@@ -110,26 +122,30 @@
       margin: 60px;
       border-radius: 12px;
     }
-    
+
     .first-name {
       color: white;
       letter-spacing: .10em;
     }
-    
+
     .last-name {
-      color: #777;
+      color: black;
       letter-spacing: .10em;
     }
-    
+
+    .basic {
+      padding: 5px;
+    }
+
     #icon {
       font-size: 32px;
       color: white;
     }
-    
+
     .divider {
           border-left: 1px solid white;
     }
-    
+
     footer {
       padding-top: 20px;
       padding-bottom: 60px;
@@ -140,7 +156,7 @@
       color: white;
       white-space: nowrap
     }
-    
+
   .video-container {
 	position:relative;
 	padding-bottom:56.25%;
@@ -148,6 +164,7 @@
 	height:0;
 	overflow:hidden;
 	margin: 10px;
+
   }
 
   .video-container iframe, .video-container object, .video-container embed {
@@ -158,113 +175,312 @@
 	height:100%;
   }
 
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
   </style>
-  
+
   </head>
-  
+
   <!-- Go to www.addthis.com/dashboard to customize your tools -->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56b9815b026022ec" async="async"></script>
 
   <body>
-    <div class="title"><img src="david.jpg" alt="">
-      <h4><span class="first-name">David</span><span class="last-name"> Hovanky</span></h4>
-      <p>game developer / designer / hacker</p>
+    <div class="title"><img src="images/david2.jpg" alt="">
+      <h4><span class="last-name">David</span><span class="last-name"> Hovanky</span></h4>
+      <p>Unity Developer / Technical Artist </p>
       <a href="https://www.github.com/robotmechanic">My Github Page</a><br>
-      <a href="https://twitter.com/robotmechanic">@robotmechanic</a>
        <div class="addthis_sharing_toolbox"></div>
     </div>
     <div class="bodyText">
     <div class="row">
-    <div class="col-sm-3"><span id="icon" class="glyphicon glyphicon-barcode"></span><h5> Who am I? </h5><br>
-        </div> 
+    <div class="col-sm-3"><span id="icon" class="glyphicon glyphicon-barcode"></span><h5>Personal Profile</h5>
+        </div>
     <div class="col-sm-9"><div class="divider">
-      <p>I am a game developer living in Tokyo, Japan. I specialize in creating 3D games in Unity. My long experience in the CG and software industry has given me the skills to plan, design and program a high quality 3D game efficiently for a fraction of the cost larger studios require. 
+      <p>I am a game developer living in Tokyo, Japan. I specialize in creating 3D games in Unity. My long experience in the CG and software industry has given me the skills to plan, design and program a high quality 3D game efficiently.
 
-Currently developing new game projects using Unity and exploring new opportunities for iOS/Android and PC/Mac platforms. 
+Currently developing new game projects using Unity and exploring new opportunities for iOS/Android, console and PC/Mac platforms.
 <br><br>
-I am also a Maya character rigger and modeler with over 10 years of industry experience in the field of high end commercials, interactive, games, television and film visual effects.
 
-Japanese ability - Level 2 Japanese Proficiency - Business level
+Japanese ability - Level 2 Japanese Proficiency - Business level<br><br>
 
-Specialties: Unity, C#, Character rigging, modeling and animation in Maya, Zbrush, Concept Design, Illustration, Texturing, MEL, Python, Unreal Development Kit, CSS, HTML, Ruby on Rails
+Specialties: Unity, C#, Character rigging, modeling and animation in Maya, Concept Design, Illustration, Texturing, MEL, Python, Unreal Development Kit, CSS, HTML, Ruby on Rails
 </p> </div>
     </div>
     </div>  <!-- row end -->
-        
+
+
+
     <div class="row">
-    <div class="col-sm-3"><span id="icon" class="glyphicon glyphicon-barcode"></span><h5>Current Projects</h5><br>
-        </div> 
+    <div class="col-sm-3"><h5>Professional Projects</h5><br>
+
+      <p>Here is a list of the projects that I have worked on through the years. The order is based on relevance rather and chronology.</p>
+        </div>
     <div class="col-sm-9">
-      <a href="http://www.indiedb.com/games/galaxica" target="_blank"><img id="screenshots" src="bg1.png" alt=""></a>
-      <div class="divider">
-      <p><b>Introduction</b><br><br>
-      Galaxica is an procedurally generated action (roguelike?) game set in space. This is a game that I started working since last December. I wanted to polish a working prototype to show the community (this means you) and to get feedback on what you like, hate, etc. I've failed plenty of times at my personal game releases in the past I really want to gauge the communities interests and reaction before investing further time into it.
-      <br><br>
-      <b>Summary</b><br>
-      <ul>
-      <li>Travel interstellar distances in your starship in search of rare materials you can use to trade. </li>
-       <li>Fight alien races and space pirates and take their stuff. </li>
-       <li>Use said stuff to purchase upgrades from the local vendor to increase your chances of survival. </li>
-       <li>Explore randomly generated 3D worlds by landing on planets and disembarking and mining/harvesting the planet for its wealth. </li>
-       <li>Dungeon exploration on planets and on ships</li>
-       </ul></p>
-          </div>
-          <p><b>Screenshots</b></p>
-      <a href="http://www.indiedb.com/games/galaxica" target="_blank"><img id="screenshots" src="galaxica1.png" alt=""></a>
-      <a href="http://www.indiedb.com/games/galaxica" target="_blank"><img id="screenshots" src="galaxica2.gif" alt=""></a>
-      <a href="http://www.indiedb.com/games/galaxica" target="_blank"><img id="screenshots" src="galaxica3.gif" alt=""></a>
-      <a href="http://www.indiedb.com/games/galaxica" target="_blank"><img id="screenshots" src="galaxica4.png" alt=""></a>
-      <a href="http://www.indiedb.com/games/galaxica" target="_blank"><img id="screenshots" src="galaxica5.gif" alt=""></a>
-       <p><b>Gameplay</b></p>  
-    <div class="video-container">
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/Lz_j-Z2XwTE" frameborder="1" allowfullscreen></iframe>
-    </div>
+      <div class="video-container">
+        <video width="960" height="540" controls muted>
+          <source src="images/linksrings.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p><b>Links Rings</b> (mobile game for iOS and Android)<br>
+      Software Engineer / Technical artist<br>
+      Implemented gameplay and UI functionality based on designer specifications<br>
+      Created facial animation pipeline<br>
+      Created character animations<br>
+      Environmental modeling and texturing<br>
+      Created map editor<br>
+      Tools: Unity, Maya, Photon Multiplayer, DoTween, Zenject, UniRX, Git
+      </p>
+      <hr>
+      <div class="video-container">
+        <video width="960" height="540" controls muted>
+          <source src="images/bladexlord.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p><b>Blade X Lord</b> (mobile game for iOS and Android)<br>
+      Technical artist<br><br>
+      Created editor and tools in Unity and Maya for setting up 3D characters with dynamic bone simulation <br>
+      Tools: Unity, Photon Multiplayer, iTween, NGUI, Git
+      </p>
+      <hr>
+
+      <div class="video-container">
+        <video width="960" height="540" controls muted>
+          <source src="images/world_cross_saga.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p><b>World Cross Saga</b> (mobile game for iOS and Android)<br>
+      Software Engineer<br><br>
+      Implemented gameplay and UI functionality in Unity based on designer specifications<br>
+      Setup simulation for characters<br>
+      Tools: Unity, Photon Multiplayer, iTween, NGUI, Git
+      </p>
+      <hr>
+
+      <img id="banner" src="images/devilsthird.jpg" alt="">
+
+      <p><b>Devil's Third</b> (console game)<br>
+      Technical artist<br><br>
+      Created pipeline tools in Maya to convert mocap data keyframe data to allow the animators to make edits
+      Tools: UDK, Maya
+      </p>
+
+      <hr>
+      <img id="banner" src="images/lollipop.jpg" alt="">
+      <p><b>Lollipop Chainsaw</b> (console game)<br>
+      Character Technical artist<br><br>
+      Rigged characters by creating an automatic controller setup in Maya via Python/MEL to
+      add FK/IK controllers with contraints.<br>
+      Tools: UDK, Maya, Motionbuilder
+      </p>
+
+      <hr>
+      <img id="banner" src="images/ff13.jpg" alt="">
+      <p><b>Final Fantasy XIII</b> (motion video production for console game)<br>
+      Character Technical artist<br><br>
+      Setup of cloth animation for characters. Fixed simulation errors that occurred during rendering.<br>
+      Tools: Maya, Unix
+      </p>
+
+      <hr>
+      <img id="banner" src="images/streetfighter.jpg" alt="">
+      <p><b>Street Fighter IV</b> (motion video production for console game)<br>
+      Character Technical artist<br><br>
+      Rigged characters<br>
+      Tools: Maya
+      </p>
+
+      <hr>
+      <img id="banner" src="images/tprime.jpg" alt="">
+      <p><b>Transformers Prime TV Series Season 1</b><br>
+      Technical artist<br><br>
+      Rigged characters<br>
+      Tools: Maya
+      </p>
+
+      <hr>
+      <img id="banner" src="images/clonewars.jpg" alt="">
+      <p><b>Star Wars Clone Wars TV Series Season 3</b><br>
+      Technical artist<br><br>
+      Rigged characters<br>
+      Tools: Maya
+      </p>
+
+      <hr>
+      <img id="banner" src="images/skycrawlers.jpg" alt="" style="width:50%">
+      <p><b>The Sky Crawlers</b>  (CG film by Mamoru Ishii)<br>
+      Technical artist<br><br>
+      Rigged characters and hard surface assets<br>
+      Created pipeline tools in Python to improve production performance<br>
+      Tools: Maya
+      </p>
+
+      <hr>
+      <img id="banner" src="images/turtletalk.jpg" alt="">
+      <p><b>Turtle Talk with Crush</b> (Walt Disney theme park attraction)<br>
+      Modeler / Technical artist<br><br>
+      Assisted with modeling and texture of Crush. Modeled, textured and rigged assorted assets.<br>
+      Tools: Maya, Motionbuilder
+      </p>
+
+      <div>
+
+
+      </div>
+
+
+
     </div>
     </div>  <!-- row end -->
-    
+
     <div class="row">
-    <div class="col-sm-3"><h5>Past Projects</h5><br>
-        </div> 
-    <div class="col-sm-9">
-      <p>Here is a list of the projects that I have worked on over the years.</p>
-      <img id="banner" src="devilsthird.jpg" alt="">
-      <p>Devil's Third</p><hr>
-      <img id="banner" src="lollipop.jpg" alt="">
-      <p>Lollipop Chainsaw</p><hr>
-      <img id="banner" src="ff13.jpg" alt="">
-      <p>Final Fantasy XIII</p><hr>
-      <img id="banner" src="streetfighter.jpg" alt="">
-      <p>Street Fighter IV</p><hr>
-      <img id="banner" src="tprime.jpg" alt="">
-      <p>Transformers Prime TV Series Season 1</p><hr>
-      <img id="banner" src="clonewars.jpg" alt="">
-      <p>Star Wars Clone Wars TV Series Season 3</p><hr>
-      <img id="banner" src="skycrawlers.jpg" alt="">
-      <p>The Sky Crawlers, a CG film by Mamoru Ishii</p><hr>
-      <img id="banner" src="turtletalk.jpg" alt="">
-      <p>Turtle Talk with Crush, a Walt Disney theme park attraction</p>
-      <div class="divider">
-     <p>As you can see above, I was fortunate to work on some really exciting projects!</p>
+    <div class="col-sm-3"><h5>Technial Artist Demo Reel</h5><br>
+    </div>
+
+      <div class="video-container">
+        <video width="960" height="540" controls muted>
+          <source src="images/david_hovanky_demo_reel.m4v" type="video/mp4">
+        </video>
       </div>
-    </div>
-    </div>  <!-- row end -->    
-         
+    </div>  <!-- row end -->
+
+
     <div class="row">
-    <div class="col-sm-3"><h5>Hobbies</h5><br>
-        </div> 
+    <div class="col-sm-3"><span id="icon" class="glyphicon glyphicon-barcode"></span><h5>Personal Unity Projects</h5><br>
+        </div>
     <div class="col-sm-9">
-      <img id="photos" class="pulse" src="arduino.jpg" alt="">
-      <img id="photos" class="pulse" src="raspberrypi.jpg" alt="">
-      <img id="photos"  class="pulse" src="workspace.jpg" alt="">
       <div class="divider">
-      <p>I love games, movies, tv dramas, some types of anime. I also mess around with Arduiono and Raspberry Pi.</p> </div>
+      <p>Below you will find various screenshots and videos of my personal projects created with Unity.<br>
+      3D asset creation, design and C# implemenation all done by me. Since I like to develop on mobile devices, I mainly create low poly assets.</p>
+
+      </div>
+      <a href="http://www.indiedb.com/games/galaxica" target="_blank"><img id="screenshots" src="images/bg1.png" alt=""></a>
+      <a href="http://www.indiedb.com/games/galaxica" target="_blank"><img id="screenshots" src="images/galaxica1.png" alt=""></a>
+      <a href="http://www.indiedb.com/games/galaxica" target="_blank"><img id="screenshots" src="images/galaxica2.gif" alt=""></a>
+      <a href="http://www.indiedb.com/games/galaxica" target="_blank"><img id="screenshots" src="images/galaxica4.png" alt=""></a>
+      <a href="http://www.indiedb.com/games/galaxica" target="_blank"><img id="screenshots" src="images/planetExploration.gif" alt=""></a>
+
+      <div class="video-container">
+        <video width="960" height="540" controls muted>
+          <source src="images/prototype1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+       <div class="video-container">
+       <iframe width="960" height="443" src="images/prototype2.mov" frameborder="1" allowfullscreen></iframe><br>
+       </div>
     </div>
-    </div>  <!-- row end -->  
+    </div>  <!-- row end -->
+
+    <div class="row">
+    <div class="col-sm-3"><h5>Design and Illustration</h5><br>
+        </div>
+    <div class="col-sm-9">
+
+      <div class="col-sm-3">
+      <p>An assortment of illustrations and concept designs using traditional media, Photoshop and Procreate.</p>
     </div>
-    
+    <div class="basic">
+      <a href="images/illustration1.jpeg" alt="Image description" target="_blank">
+      <img src="images/illustration1.jpeg" alt="" style="width:77%">
+      </a>
+    </div>
+    <div class="column">
+      <a href="images/illustration2.png" alt="Image description" target="_blank">
+      <img src="images/illustration2.png" alt="" style="width:100%">
+      </a>
+    </div>
+    <div class="column">
+      <a href="images/illustration3.png" alt="Image description" target="_blank">
+      <img src="images/illustration3.png" alt="" style="width:100%">
+      </a>
+    </div>
+    <div class="column">
+      <a href="images/illustration4.png" alt="Image description" target="_blank">
+      <img src="images/illustration4.png" alt="" style="width:100%">
+      </a>
+    </div>
+    <div class="column">
+      <a href="images/illustration5.png" alt="Image description" target="_blank">
+      <img src="images/illustration5.png" alt="" style="width:100%">
+      </a>
+    </div>
+    <div class="column">
+      <a href="images/illustration6.png" alt="Image description" target="_blank">
+      <img src="images/illustration6.png" alt="" style="width:100%">
+      </a>
+    </div>
+    <div class="column">
+      <a href="images/illustration7.png" alt="Image description" target="_blank">
+      <img src="images/illustration7.png" alt="" style="width:100%">
+      </a>
+    </div>
+    <div class="column">
+      <a href="images/illustration8b.jpeg" alt="Image description" target="_blank">
+      <img src="images/illustration8b.jpeg" alt="" style="width:100%">
+      </a>
+    </div>
+    <div class="column">
+      <a href="images/illustration9b.jpeg" alt="Image description" target="_blank">
+      <img src="images/illustration9b.jpeg" alt="" style="width:100%">
+      </a>
+    </div>
+
+
+    <div class="column">
+      <a href="images/3.jpeg" alt="Image description" target="_blank">
+      <img src="images/3.jpeg" alt="" style="width:100%">
+      </a>
+    </div>
+    <div class="column">
+      <a href="images/1.jpeg" alt="Image description" target="_blank">
+      <img src="images/1.jpeg" alt="" style="width:100%">
+      </a>
+    </div>
+    <div class="column">
+      <a href="images/illustration12.png" alt="Image description" target="_blank">
+      <img src="images/illustration12.png" alt="" style="width:100%">
+      </a>
+    </div>
+    <div class="column">
+      <a href="images/illustration13.jpeg" alt="Image description" target="_blank">
+      <img src="images/illustration13.jpeg" alt="" style="width:100%">
+      </a>
+    </div>
+    <div class="column">
+      <a href="images/conceptDesign3.png" alt="Image description" target="_blank">
+      <img src="images/conceptDesign3.png" alt="" style="width:100%">
+      </a>
+    </div>
+    <div class="column">
+      <a href="images/conceptDesign5.png" alt="Image description" target="_blank">
+      <img src="images/conceptDesign5.png" alt="" style="width:100%">
+      </a>
+    </div>
+    <div class="column">
+      <a href="images/illustration20.jpeg" alt="Image description" target="_blank">
+      <img src="images/illustration20.jpeg" alt="" style="width:100%">
+      </a>
+    </div>
+
+  </div>
+    </div>  <!-- row end -->
+
+
     <footer>
-        <p>&copy; 2016 David Hovanky All rights reserved.</p>
-        <div class="addthis_sharing_toolbox"></div>  
+        <p>&copy; 2021 David Hovanky All rights reserved.</p>
+        <div class="addthis_sharing_toolbox"></div>
     </footer>
   </body>
 </html>
